@@ -14,6 +14,7 @@
   margin-right: var(--dl-space-space-threeunits);
   flex-direction: row;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .trace-page-image {
   width: var(--dl-size-size-small);
@@ -41,6 +42,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .trace-page-text04 {
   color: var(--dl-color-scheme-green80);
@@ -52,6 +54,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 .trace-page-text05 {
   color: var(--dl-color-scheme-green80);
@@ -63,6 +66,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 .trace-page-text06 {
   color: var(--dl-color-scheme-green80);
@@ -74,6 +78,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 .trace-page-burger-menu {
   fill: #105749;

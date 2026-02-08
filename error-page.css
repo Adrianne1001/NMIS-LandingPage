@@ -49,6 +49,9 @@
   position: absolute;
   object-fit: cover;
 }
+#go-home-btn {
+  cursor: pointer;
+}
 @media(max-width: 767px) {
   .error-page-lottie-node {
     width: 100%;

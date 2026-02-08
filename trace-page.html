@@ -187,6 +187,7 @@
       window.onload = () => {
         const runAllScripts = () => {
           initializeAllAccordions()
+          initializeNavigation()
         }
 
         const listenForUrlChanges = () => {
@@ -203,6 +204,64 @@
             },
             true
           )
+        }
+
+        const initializeNavigation = () => {
+          // Home link
+          const homeLink = document.querySelector('.trace-page-text03')
+          if (homeLink) {
+            homeLink.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
+
+          // Producers/FAQs link
+          const producersLink = document.querySelector('.trace-page-text04')
+          if (producersLink) {
+            producersLink.addEventListener('click', () => {
+              window.location.href = 'index.html#FAQs'
+            })
+          }
+
+          // Articles link
+          const articlesLink = document.querySelector('.trace-page-text05')
+          if (articlesLink) {
+            articlesLink.addEventListener('click', () => {
+              window.location.href = 'article-section.html'
+            })
+          }
+
+          // About Us link
+          const aboutLink = document.querySelector('.trace-page-text06')
+          if (aboutLink) {
+            aboutLink.addEventListener('click', () => {
+              window.location.href = 'index.html#FAQs'
+            })
+          }
+
+          // Trace button
+          const traceButtons = document.querySelectorAll('.button-secondary')
+          traceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              window.location.href = 'trace-page.html'
+            })
+          })
+
+          // Log In button
+          const loginButtons = document.querySelectorAll('.button-primary')
+          loginButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              window.location.href = 'log-in-page.html'
+            })
+          })
+
+          // Logo click to go home
+          const logo = document.querySelector('.trace-page-logo')
+          if (logo) {
+            logo.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
         }
 
         const initializeAllAccordions = () => {

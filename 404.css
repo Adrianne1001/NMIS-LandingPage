@@ -33,3 +33,6 @@
   text-align: center;
   font-weight: 400;
 }
+#go-home-btn {
+  cursor: pointer;
+}

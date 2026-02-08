@@ -17,6 +17,7 @@
   margin-right: var(--dl-space-space-threeunits);
   flex-direction: row;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .log-in-page-image {
   width: var(--dl-size-size-small);
@@ -44,6 +45,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .log-in-page-faqs {
   color: var(--dl-color-scheme-green80);
@@ -54,6 +56,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .log-in-page-articles {
   color: var(--dl-color-scheme-green80);
@@ -64,6 +67,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .log-in-page-aboutus {
   color: var(--dl-color-scheme-green80);
@@ -75,6 +79,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 .log-in-page-burger-menu {
   fill: #105749;

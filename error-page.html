@@ -86,6 +86,9 @@
           <span>or possibly never existed.</span>
           <br />
         </p>
+        <button id="go-home-btn" style="margin-top: 20px; padding: 10px 20px; background-color: #2c7e3f; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+          Go Home
+        </button>
         <img alt="image" src="public/error_bg.svg" class="error-page-image" />
       </div>
     </div>
@@ -93,6 +96,7 @@
       window.onload = () => {
         const runAllScripts = () => {
           initializeAllAccordions()
+          initializeNavigation()
         }
 
         const listenForUrlChanges = () => {
@@ -109,6 +113,16 @@
             },
             true
           )
+        }
+
+        const initializeNavigation = () => {
+          // Go Home button
+          const goHomeBtn = document.querySelector('#go-home-btn')
+          if (goHomeBtn) {
+            goHomeBtn.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
         }
 
         const initializeAllAccordions = () => {

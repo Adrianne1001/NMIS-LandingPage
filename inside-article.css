@@ -112,6 +112,7 @@
   margin-right: var(--dl-space-space-threeunits);
   flex-direction: row;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .inside-article-image {
   width: var(--dl-size-size-small);
@@ -139,6 +140,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .inside-article-faqs {
   color: var(--dl-color-scheme-green80);
@@ -149,6 +151,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .inside-article-articles {
   color: var(--dl-color-scheme-green80);
@@ -159,6 +162,7 @@
   line-height: 1.5;
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
+  cursor: pointer;
 }
 .inside-article-aboutus {
   color: var(--dl-color-scheme-green80);
@@ -170,6 +174,7 @@
   margin-right: var(--dl-space-space-twounits);
   text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 .inside-article-burger-menu {
   fill: #105749;

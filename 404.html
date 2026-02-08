@@ -71,12 +71,16 @@
             WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND
           </h2>
         </div>
+        <button id="go-home-btn" style="margin-top: 20px; padding: 10px 20px; background-color: #2c7e3f; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+          Go Home
+        </button>
       </div>
     </div>
     <script>
       window.onload = () => {
         const runAllScripts = () => {
           initializeAllAccordions()
+          initializeNavigation()
         }
 
         const listenForUrlChanges = () => {
@@ -93,6 +97,16 @@
             },
             true
           )
+        }
+
+        const initializeNavigation = () => {
+          // Go Home button
+          const goHomeBtn = document.querySelector('#go-home-btn')
+          if (goHomeBtn) {
+            goHomeBtn.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
         }
 
         const initializeAllAccordions = () => {

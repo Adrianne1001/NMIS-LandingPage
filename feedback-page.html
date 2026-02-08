@@ -97,6 +97,7 @@
       window.onload = () => {
         const runAllScripts = () => {
           initializeAllAccordions()
+          initializeNavigation()
         }
 
         const listenForUrlChanges = () => {
@@ -113,6 +114,64 @@
             },
             true
           )
+        }
+
+        const initializeNavigation = () => {
+          // Home link
+          const homeLink = document.querySelector('.feedback-page-home')
+          if (homeLink) {
+            homeLink.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
+
+          // FAQs link
+          const faqsLink = document.querySelector('.feedback-page-faqs')
+          if (faqsLink) {
+            faqsLink.addEventListener('click', () => {
+              window.location.href = 'index.html#FAQs'
+            })
+          }
+
+          // Articles link
+          const articlesLink = document.querySelector('.feedback-page-articles')
+          if (articlesLink) {
+            articlesLink.addEventListener('click', () => {
+              window.location.href = 'article-section.html'
+            })
+          }
+
+          // About Us link
+          const aboutLink = document.querySelector('.feedback-page-aboutus')
+          if (aboutLink) {
+            aboutLink.addEventListener('click', () => {
+              window.location.href = 'index.html#FAQs'
+            })
+          }
+
+          // Trace button
+          const traceButtons = document.querySelectorAll('.button-secondary')
+          traceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              window.location.href = 'trace-page.html'
+            })
+          })
+
+          // Log In button
+          const loginButtons = document.querySelectorAll('.button-primary')
+          loginButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              window.location.href = 'log-in-page.html'
+            })
+          })
+
+          // Logo click to go home
+          const logo = document.querySelector('.feedback-page-logo')
+          if (logo) {
+            logo.addEventListener('click', () => {
+              window.location.href = 'index.html'
+            })
+          }
         }
 
         const initializeAllAccordions = () => {
